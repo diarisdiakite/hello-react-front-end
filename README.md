@@ -31,7 +31,9 @@
 
 # 📖 [hello-rails-react](#hello-rails-react) <a name="about-project"></a>
 
-The hello-rails-react application is a fully functional website that allow you to manage your expenses. The website was created with Ruby on Rails. 
+The hello-rails-react application is a fully functional website that connects the Hello world React application to a Ruby on Rails application. The website was created with ReactJs and Ruby on Rails.
+
+Link to the Ruby on Rails application: https://github.com/diarisdiakite/hello-rails-back-end
 
 ## 🛠 Built With <a name="built-with"></a>
 
