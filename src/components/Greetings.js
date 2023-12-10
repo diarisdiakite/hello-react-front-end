@@ -19,7 +19,7 @@ function Greetings() {
   return (
     <div>
       <h1>Random Greeting:</h1>
-      <p>{message || 'Default message'}</p>
+      <p>{message || 'Nice day!'}</p>
     </div>
   );
 }

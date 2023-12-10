@@ -1,11 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// const URL = 'http://localhost:3000/messages/random';
-
 export const fetchMessage = createAsyncThunk('random_greeting', async () => {
-  const response = await axios.get('/random_greeting');
-  const data = response.data;
+  const { data } = await axios.get('/random_greeting');
   return data.greeting;
 });
 
@@ -18,7 +15,7 @@ export const greetingSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchMessage.fulfilled, (state, action) => {
-      state.message = action.payload; // Update 'message' in the state
+      state.message = action.payload;
     });
   },
 });
